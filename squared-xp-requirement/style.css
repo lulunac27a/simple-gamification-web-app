@@ -1,0 +1,7 @@
+* {
+    font-family: system-ui, sans-serif;
+}
+progress {
+    width: 100px;
+    height: 20px;
+}
