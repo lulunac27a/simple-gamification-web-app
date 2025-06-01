@@ -12,7 +12,7 @@ earnXpButton.addEventListener("click", () => {
   xpText.textContent = xp;
   if (xp >= xpNeeded) {
     level++;
-    xpNeeded = level;
+    xpNeeded = level * level;
     levelText.textContent = level;
     xp = 0;
     xpText.textContent = xp;
