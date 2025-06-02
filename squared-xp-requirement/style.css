@@ -5,5 +5,5 @@
 progress {
   /*progress bar styles*/
   width: 100px; /*set width of progress bar to 100 pixels*/
-  height: 100px; /*set height of progress bar to 20 pixels*/
+  height: 20px; /*set height of progress bar to 20 pixels*/
 }
