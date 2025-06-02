@@ -1,7 +1,7 @@
-const levelText = document.getElementById("level"); //level text
-const xpText = document.getElementById("xp"); //XP (experience points) text
-const earnXpButton = document.getElementById("earnXpButton"); //earn XP button
-const progressBar = document.getElementById("progressBar"); //progress bar
+const levelText = document.getElementById("level"); //level text element
+const xpText = document.getElementById("xp"); //XP (experience points) text element
+const earnXpButton = document.getElementById("earnXpButton"); //earn XP button element
+const progressBar = document.getElementById("progressBar"); //progress bar element
 let level = 1; //set level to 1
 let xp = 0; //set XP to 0
 let xpNeeded = 1; //set XP needed to 1
