@@ -1,7 +1,9 @@
-* {/*global styles*/
-    font-family: system-ui, sans-serif;/*set default font to system-based font*/
+* {
+  /*global styles*/
+  font-family: system-ui, sans-serif; /*set default font to system-based font*/
 }
-progress {/*progress bar styles*/
-    width: 100px;/*set width of progress bar to 100 pixels*/
-    height: 100px;/*set height of progress bar to 20 pixels*/
+progress {
+  /*progress bar styles*/
+  width: 100px; /*set width of progress bar to 100 pixels*/
+  height: 100px; /*set height of progress bar to 20 pixels*/
 }
