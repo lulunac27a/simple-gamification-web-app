@@ -1,22 +1,23 @@
-const levelText = document.getElementById("level");
-const xpText = document.getElementById("xp");
-const earnXpButton = document.getElementById("earnXpButton");
-const progressBar = document.getElementById("progressBar");
-let level = 1;
-let xp = 0;
-let xpNeeded = 1;
+const levelText = document.getElementById("level"); //level text
+const xpText = document.getElementById("xp"); //XP (experience points) text
+const earnXpButton = document.getElementById("earnXpButton"); //earn XP button
+const progressBar = document.getElementById("progressBar"); //progress bar
+let level = 1; //set level to 1
+let xp = 0; //set XP to 0
+let xpNeeded = 1; //set XP needed to 1
 
 earnXpButton.addEventListener("click", () => {
-  xp += 1;
-  progressBar.value = xp;
-  xpText.textContent = xp;
+  //when earn XP button is clicked
+  xp += 1; //increase XP by 1
+  progressBar.value = xp; //update progress bar value
+  xpText.textContent = xp; //update XP text value
   if (xp >= xpNeeded) {
-    level++;
-    xpNeeded = level * level;
-    levelText.textContent = level;
-    xp = 0;
-    xpText.textContent = xp;
-    progressBar.value = xp;
-    progressBar.max = xpNeeded;
+    level++; //increase level
+    xpNeeded = level * level; //increase XP needed by square
+    levelText.textContent = level; //update level text
+    xp = 0; //set XP to 0
+    xpText.textContent = xp; //update XP text value
+    progressBar.value = xp; //update progress bar value
+    progressBar.max = xpNeeded; //update progress bar max value
   }
 });
