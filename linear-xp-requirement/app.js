@@ -8,7 +8,7 @@ let xpNeeded = 1;
 
 earnXpButton.addEventListener("click", () => {
   xp += 1;
-  progressBar.style.width = `${(xp / xpNeeded) * 100}%`;
+  progressBar.style.value = xp;
   xpText.textContent = xp;
   if (xp >= xpNeeded) {
     level++;
@@ -16,6 +16,7 @@ earnXpButton.addEventListener("click", () => {
     levelText.textContent = level;
     xp = 0;
     xpText.textContent = xp;
-    progressBar.style.width = "0%";
+    progressBar.style.value = xp;
+    progressBar.style.max = xpNeeded;
   }
 });
