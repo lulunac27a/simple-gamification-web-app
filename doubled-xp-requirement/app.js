@@ -7,17 +7,17 @@ let xp = 0; //set XP to 0
 let xpNeeded = 1; //set XP needed to 1
 
 earnXpButton.addEventListener("click", () => {
-  //when earn XP button is clicked
-  xp += 1; //increase XP by 1
-  progressBar.value = xp; //update progress bar value
-  xpText.textContent = xp; //update XP text value
-  if (xp >= xpNeeded) {
-    level++; //increase level
-    xpNeeded *= 2; //double the XP needed
-    levelText.textContent = level; //update level text
-    xp = 0; //set XP to 0
-    xpText.textContent = xp; //update XP text value
+    //when earn XP button is clicked
+    xp += 1; //increase XP by 1
     progressBar.value = xp; //update progress bar value
-    progressBar.max = xpNeeded; //update progress bar max value
-  }
+    xpText.textContent = xp; //update XP text value
+    if (xp >= xpNeeded) {
+        level++; //increase level
+        xpNeeded *= 2; //double the XP needed
+        levelText.textContent = level; //update level text
+        xp = 0; //set XP to 0
+        xpText.textContent = xp; //update XP text value
+        progressBar.value = xp; //update progress bar value
+        progressBar.max = xpNeeded; //update progress bar max value
+    }
 });
